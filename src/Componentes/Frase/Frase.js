@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { ContenedorFrase } from './Frase.styles';
 
@@ -9,6 +10,10 @@ const Frase = ({ frase }) => {
       <p>-{frase.author}</p>
     </ContenedorFrase>
   );
+};
+
+Frase.propTypes = {
+  frase: PropTypes.object.isRequired,
 };
 
 export default Frase;

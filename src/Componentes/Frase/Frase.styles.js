@@ -8,7 +8,7 @@ export const ContenedorFrase = styled.div`
   margin-top: 10rem;
 
   @media (min-width: 992px) {
-    margin-top: 5rem;
+    margin-top: 17rem;
   }
   h1 {
     font-family: Arial, Helvetica, sans-serif;
