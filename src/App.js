@@ -1,5 +1,16 @@
+import { ContenedorPrincipal, Boton } from './App.styles';
+
 function App() {
-  return <h1>Breaking Bad</h1>;
+  //Función que consulta la Api en
+  const consultarAPI = () => {
+    console.log('Consultando...');
+  };
+
+  return (
+    <ContenedorPrincipal>
+      <Boton onClick={consultarAPI}>Obtener Frase</Boton>;
+    </ContenedorPrincipal>
+  );
 }
 
 export default App;
