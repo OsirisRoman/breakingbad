@@ -14,11 +14,17 @@ export const Boton = styled.button`
     #007d35 40%,
     #0f574e 100%
   );
-  background-size: 300px;
+  background-size: 500px;
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
   margin-top: 3rem;
   padding: 1rem 3rem;
   font-size: 2rem;
   border: 2px solid black;
+  transition: background-size 0.3s ease;
+
+  :hover {
+    cursor: pointer;
+    background-size: 350px;
+  }
 `;

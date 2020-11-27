@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import Frase from './Componentes/Frase/Frase';
 
@@ -19,6 +19,11 @@ function App() {
 
     setFrase(frase[0]);
   };
+
+  //Cargar una frase cuando se renderiza la página
+  useEffect(() => {
+    consultarAPI();
+  }, []);
 
   return (
     <ContenedorPrincipal>
