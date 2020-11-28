@@ -3,8 +3,14 @@ import styled from '@emotion/styled';
 export const ContenedorPrincipal = styled.div`
   display: flex;
   align-items: center;
-  padding-top: 5rem;
   flex-direction: column;
+`;
+
+export const Imagen = styled.img`
+  margin-top: 10px;
+  @media (max-width: 450px) {
+    width: 75%;
+  }
 `;
 
 export const Boton = styled.button`
@@ -18,6 +24,7 @@ export const Boton = styled.button`
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
   margin-top: 3rem;
+  margin-bottom: 1rem;
   padding: 1rem 3rem;
   font-size: 2rem;
   border: 2px solid black;
