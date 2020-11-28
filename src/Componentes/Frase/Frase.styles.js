@@ -5,10 +5,10 @@ export const ContenedorFrase = styled.div`
   border-radius: 0.5rem;
   background-color: #fff;
   max-width: 800px;
-  margin-top: 10rem;
+  margin-top: 5rem;
 
   @media (min-width: 992px) {
-    margin-top: 17rem;
+    margin-top: 2rem;
   }
   h1 {
     font-family: Arial, Helvetica, sans-serif;
@@ -31,6 +31,6 @@ export const ContenedorFrase = styled.div`
     font-weight: bold;
     text-align: right;
     color: #666;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 `;

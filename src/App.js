@@ -2,7 +2,9 @@ import { useState, useEffect } from 'react';
 
 import Frase from './Componentes/Frase/Frase';
 
-import { ContenedorPrincipal, Boton } from './App.styles';
+import ReactLogo from './logo.svg';
+
+import { Imagen, ContenedorPrincipal, Boton } from './App.styles';
 
 function App() {
   //State de frases
@@ -11,9 +13,7 @@ function App() {
   //Función que consulta la Api en
   const consultarAPI = async () => {
     //La función fetch nos devuelve un promise
-    const api = await fetch(
-      'http://breaking-bad-quotes.herokuapp.com/v1/quotes'
-    );
+    const api = await fetch('https://breakingbadapi.com/api/quote/random');
 
     const frase = await api.json();
 
@@ -27,8 +27,9 @@ function App() {
 
   return (
     <ContenedorPrincipal>
+      <Imagen src={ReactLogo} />
       <Frase frase={frase} />
-      <Boton onClick={consultarAPI}>Obtener Frase</Boton>;
+      <Boton onClick={consultarAPI}>Obtener Frase</Boton>
     </ContenedorPrincipal>
   );
 }
